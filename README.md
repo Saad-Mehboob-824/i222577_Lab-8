@@ -42,7 +42,7 @@ socket.js                           # configuration logic to handle WebSocket ev
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/task-manager.git
+   git clone https://github.com/ayowilfred95/RESTful-API-for-a-simple-task-management-system.git
    cd task-manager
    ```
 
