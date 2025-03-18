@@ -20,7 +20,7 @@ describe('Database Connection', () => {
 
     await connectDB();
 
-    expect(mongoose.connect).toHaveBeenCalledWith(process.env.MONGO_URI);
+    expect(mongoose.connect).toHaveBeenCalledWith(process.env.MONGOURI);
     expect(logSpy).toHaveBeenCalledWith('Database connected successfully');
 
     logSpy.mockRestore();
@@ -36,7 +36,7 @@ describe('Database Connection', () => {
 
     await connectDB();
 
-    expect(mongoose.connect).toHaveBeenCalledWith(process.env.MONGO_URI);
+    expect(mongoose.connect).toHaveBeenCalledWith(process.env.MONGOURI);
     expect(logSpy).toHaveBeenCalledWith('Error connecting to database', expect.any(Error));
 
     logSpy.mockRestore();
