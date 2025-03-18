@@ -33,6 +33,10 @@ jobs:
       - name: Wait for MongoDB to start
         run: sleep 10  # Ensures MongoDB is ready before proceeding
 
+      - name: Install ESLint
+        run: npm install eslint --save-dev
+
+
       - name: Set up Environment Variables
         run: |
           echo "JWT_SECRET=supersecretkey" >> $GITHUB_ENV
